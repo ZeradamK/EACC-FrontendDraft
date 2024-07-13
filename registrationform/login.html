@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>EACC Registration</title>
+    <link rel="stylesheet" href="login-style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        button {
+            width: 200px;
+            height: 40px;
+            font-size: 17px;
+            display: block;
+            float: right;
+            line-height: calc(12pt * 2);
+            padding: 0 20px;
+            border: none;
+            background: #000000;
+            color: white;
+            letter-spacing: 2px;
+            transition: 0.2s all ease-in-out;
+            border-bottom: 2px solid transparent;
+            outline: none;
+        }
+
+        button:hover {
+            transition-duration: 0.3s;
+            background: inherit;
+            color: #000000;
+            border-bottom: 2px solid #4f4f4f;
+        }
+
+        ::selection {
+            background: rgb(255, 255, 255);
+        }
+        .social-login{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            margin-top: 20px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 45%;
+        }
+
+        .btn-google {
+            background-color: #db4437;
+            color: white;
+            width: 100%;
+            height: auto;
+        }
+
+        .btn-facebook {
+            background-color: #3b5998;
+            color: white;
+        }
+
+        .social-login img {
+            width: 20px;
+            margin-right: 10px;
+        }
+
+        .signup-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+        #login{
+            margin-top: 30px;
+            align-items: end;
+        }
+        .separator {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .separator::before, .separator::after {
+            content: '';
+            flex: 1;
+            border-bottom: 1px solid #000;
+        }
+        .separator:not(:empty)::before {
+            margin-right: .25em;
+        }
+        .separator:not(:empty)::after {
+            margin-left: .25em;
+        }
+        @media (max-width: 768px) {
+            .user-details {
+                flex-direction: column;
+            }
+            .social-login {
+                flex-direction: row;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="title">Login</div>
+    <div class="content">
+        <form action="#">
+            <div class="user-details row">
+                <div class="col-md-6">
+                    <div class="input-box ">
+                        <span class="details">Email</span>
+                        <input type="text" placeholder="Enter your email" required id="email">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Password</span>
+                        <input type="text" placeholder="Enter your password" required id="password">
+                    </div>
+                    <div class="input-box mt-5" id="login">
+                        <button type="submit" id="signin">Sign in</button>
+
+                    </div>
+
+
+                </div>
+                <div class="signup-link">
+                    <p>Don't have an account? <a href="register.html">Sign up</a></p>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+
+
+
+</body>
+</html>
